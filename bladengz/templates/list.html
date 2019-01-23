@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        {% block main %}{% endblock %}
+    </div>
+    
+    <div class="col-md-4">
+        {% include '_sidebar.html' %}
+    </div>
+</div>
+
+<!-- Pagination -->
+<nav aria-label="Page navigation example">
+    <ul class="pagination ml-3">
+        <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled rounded-pill" href="#">Newer</a>
+    </ul>
+</nav>
+{% endblock content %}

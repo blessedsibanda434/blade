@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load disqus_tags %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-8">
+            <h3>{{video.title}}</h3>
+            <div>
+                <iframe width="650" height="365" src="{{video.url}}" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    </div>
+    
+{% endblock content %}
+
+
+ mmk
