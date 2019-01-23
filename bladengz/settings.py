@@ -25,7 +25,7 @@ SECRET_KEY = 'jk_asabew-#5*b7_*qxb1z!l&=_5a@vajtm**z2a4z8r!j%^n_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost', 'mysite.com', 'bladengz.herokuapp.com', '192.168.42.93']
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost','bladengz.pythonanywhere.com', 'mysite.com', 'bladengz.herokuapp.com', '192.168.42.93']
 
 
 # Application definition
@@ -139,25 +139,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'bladengz', 'static'),
 ]
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 
-'''
-MARKDOWNIFY_STRIP = False
-MARKDOWNIFY_WHITELIST_TAGS = [
-    'a', 'blockquote', 'code', 'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
-    'h7', 'li', 'ol', 'p', 'strong', 'ul','img','div',
-]
-
-MARKDOWNIFY_WHITELIST_ATTRS = [
-    'href',
-    'src',
-    'alt',
-]
-
-MARKDOWNIFY_MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code',
-                                   'markdown.extensions.extra', ]
-
-'''
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'bladengz', 'media')
 MEDIA_URL = '/media/'
