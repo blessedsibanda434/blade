@@ -142,7 +142,7 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'bladengz', 'media')
 MEDIA_URL = '/media/'
 
-SITE_ID = 2
+SITE_ID = 3
 
 MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
